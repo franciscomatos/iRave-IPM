@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>iRave(app)</title>
+    <link rel="stylesheet" href="style-QR.css">
+    <script src="lineup.js"></script>
+    <script src="iRave.js"></script>
+    <script src="time.js"></script>
+
+    <script>
+      function changeImage1() {
+        var image = document.getElementById('rgb');
+        var newImage = document.getElementById('full');
+        var text = document.getElementById('text');
+        var entireScreen = document.getElementById('screen-app-lineup');
+        var topScreen = document.getElementById('screen-top');
+        text.style.display = 'none';
+        image.style.display = 'none';
+        topScreen.style.display = 'none';
+        entireScreen.style.backgroundColor = "white";
+        newImage.style.display = 'block';
+      }
+
+      function changeImage2() {
+        var image = document.getElementById('rgb');
+        var newImage = document.getElementById('full');
+        var text = document.getElementById('text');
+        var entireScreen = document.getElementById('screen-app-lineup');
+        var topScreen = document.getElementById('screen-top');
+        newImage.style.display = 'none';
+        entireScreen.style.backgroundColor = "#45555F";
+        topScreen.style.display = 'block';
+        text.style.display = 'block';
+        image.style.display = 'block';
+      }
+
+    </script>
+
+  </head> 
+  <body onload="Time()">
+
+    <div id="screen-app-lineup">
+
+      <div id="screen-top">
+        <div id="back"><img id="back-icon" src="imag/back.png" width="100" onClick="document.location.href='iRave.html';"></div>
+        <div id="app-name">QR</div>
+        <div id="time">10:09</div>
+      </div>
+
+      <svg id="button-div" width="10" height="18">
+          <rect id="button" width="10" height="18" style="fill:darkgray;" onClick="document.location.href='iRave.html';"/>
+      </svg>
+
+
+      <div id="qrbackground" height="6.6em" width="6.6em">
+          <img id="full" src="imag/qr-code-apm.png" onclick="changeImage2()" width="100">
+      </div>
+
+      <table id="app-grid" width="100%">
+        <tr>
+          <td id="screen-divison" width='25%' align="center">
+            <img id="rgb" src="imag/qr-code.png" onclick="changeImage1()" width="25">
+          </td>
+          <td id="screen-divison" width='60%' align="center">
+            <div id="text">Carrega no código e mostra-o à entrada para voltares a entrar no recinto.</div>
+          </td>
+        </tr>
+
+
+    </div>
+
+  </body>
+
+</html>

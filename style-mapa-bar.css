@@ -1,0 +1,184 @@
+body {
+    font-family: "Source Sans Pro", Helvetica, Arial;
+    font-weight:lighter;
+}
+  
+  
+#screen-app-lineup{
+    width: 6.60em;
+    height: 6.60em;
+    display: block;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid darkgray;
+    border-radius: 0.5em;
+    position: absolute;
+    background-color: #45555F;
+  }
+   
+#button-div {
+    display: block;
+    position: absolute;
+    left: 103%;
+    margin-top: 1em;
+    z-index: 10;
+}
+  
+#button {
+    fill:black;
+    rx:4;
+    ry:4;
+    stroke: #636363;
+    display: block;
+}
+  
+#screen-top {
+    height: 0.825em;
+    width: inherit;
+}
+  
+#time {
+    height: inherit;
+    width: 25%;
+    position: fixed;
+    right: 0;
+    font-size: 0.5em;
+    color: white;
+    text-align: center;
+}
+  
+#app-name {
+    height: inherit;
+    width: 60%;
+    position: fixed;
+    left: 15%;
+    font-size: 0.5em;
+    color: white;
+    text-align: left;
+}
+  
+#back {
+    height: inherit;
+    width: 15%;
+    position: fixed;
+    left: 0;
+}
+  
+#back-icon {
+    filter: invert(100%);
+    height: 0.7em;
+    width: 0.9em;
+    position: fixed;
+}
+
+#fullmap {
+    position: relative;
+    height: 5.7em;
+    width: 6.6em;
+    overflow: hidden;
+}
+
+#full {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    height: 97%;
+    border-radius: 0.1em;
+}
+
+.pins {
+    position: absolute;
+    z-index: 10em;
+    width: 10%;
+    display: block;
+}
+
+.close-locations-name {
+    position: absolute;
+    z-index: 10em;
+    display: block;
+    color: black;
+    font-size: 0.4em;
+}
+
+#current-location-pin {
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#absolut {
+    top: 20%;
+    left: 70%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#absolut-name { 
+    top: 20%;
+    left: 55%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#superbock {
+    top: 53%;
+    left: 20%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#superbock-name {
+    top: 43%;
+    left: 20%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#somersby {
+    top: 40%;
+    left: 65%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#somersby-name {
+    top: 43%;
+    left: 81%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#heineken {
+    top: 63%;
+    left: 75%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#heineken-name {
+    top: 73%;
+    left: 75%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#starbucks {
+    top: 80%;
+    left: 22%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#starbucks-name {
+    top: 90%;
+    left: 22%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}

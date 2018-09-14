@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>iRave(app)</title>
+    <link rel="stylesheet" href="style-informacao.css">
+    <script src="iRave.js"></script>
+    <script src="time.js"></script>
+  </head>
+
+  <body onload="Time()">
+
+    <div id="screen-app-lineup">
+      <div id="screen-top">
+        <div id="back"><img id="back-icon" src="imag/back.png" width="100" onClick="document.location.href='iRave.html';"></div>
+        <div id="app-name">Procura</div>
+        <div id="time">10:09</div>
+      </div>
+
+      <svg id="button-div" width="10" height="18">
+        <rect id="button" width="10" height="18" style="fill:darkgray;" onClick=""/>
+      </svg>
+
+      <div class="parent" id="parent">
+        <div class="child">
+          <table class="btn-group">
+            <tb><button class="button_1" style= "color: #009DE0">Geral</button>
+            <tr style="border-bottom: 0.001em solid #6a767e">
+              <td><button class="button" id="text1" onclick="myFunction('sectiontohide1');">Existe WI-FI grátis no recinto?</button>
+                <div class='sectiontohide' id="sectiontohide1">Sim, com o nome 'iRave_WIFI'</div>
+              </td>
+            </tr>
+
+            <tr style="border-bottom: 0.001em solid #6a767e">
+              <td><button class="button" id="text2" onclick="myFunction('sectiontohide2');">Existe comida no recinto?</button>
+                <div class='sectiontohide' id="sectiontohide2">Sim, basta procurar na zona de restaura&ccedil;&atilde;o.</div></button></td>
+            </tr></tb>
+            <tr style="border-bottom: 0.001em solid #6a767e">
+              <td><button class="button" id="text3" onclick="myFunction('sectiontohide3');">Onde posso apanhar uber/t&aacute;xi?</button><div class='sectiontohide' id="sectiontohide3">Na entrada principal estar&atilde;o sempre transportes acess&iacute;veis.</div></button></td>
+            </tr></tb>
+
+              <td><button class="button_1" style= "color: #009DE0">Relógio</button></td>
+              <tr style="border-bottom: 0.001em solid #6a767e">
+                <td><button class="button" id="text4" onclick="myFunction('sectiontohide4');">Onde fica o WC mais perto?</button><div class='sectiontohide' id="sectiontohide4">Basta ir ao menu principal -> mapas -> WC.</div></button></td>
+              </tr></tb>
+              <tr style="border-bottom: 0.001em solid #6a767e">
+                <td><button class="button" id="text5" onclick="myFunction('sectiontohide5');">Posso tirar o rel&oacute;gio depois de entrar no recinto?</button><div class='sectiontohide' id="sectiontohide5">N&atilde;o, pois o iRave &eacute; v&aacute;lido para entrar e sair do recinto.</div></td>
+              </tr>
+
+            </div>
+
+          </table>
+
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>

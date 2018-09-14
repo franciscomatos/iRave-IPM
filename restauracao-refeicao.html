@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>iRave(app)</title>
+        <link rel="stylesheet" href="style-restauracao-refeicao.css">
+        <script src="lineup.js"></script>
+        <script src="restaurants.js"></script>
+        <script src="iRave.js"></script>
+        <script src="time.js"></script>
+    </head>
+
+    <body onload="Time()">
+    
+        <div id="screen-app-lineup">
+
+            <div id="screen-top">
+                <div id="back"><img id="back-icon" src="imag/back.png" width="100" onClick="document.location.href='restauracao.html';"></div>
+                <div id="app-name">Refeição</div>
+                <div id="time">10:09</div>
+            </div>
+
+            <svg id="button-div" width="10" height="18">
+                    <rect id="button" width="10" height="18" style="fill:darkgray;" onClick="document.location.href='iRave.html';"/>
+            </svg>
+
+            <div class="parent" id="parent">
+                <div class="child">
+                    <table class="btn-group">
+                        <tr style="border-bottom: 0.001em solid #6a767d">
+                            <td class="screen-divison1" onclick="selectRestaurant('McDonalds'); selectRestaurantMenu('imag/mc-menu.jpg');
+                            selectRestaurantLocation('mcdonalds'); document.location.href='restauracao-restaurante.html';">
+                                <button class="button text">McDonald's</button></td>
+                            <td class="screen-divison2"><img class="button logo" style="border-radius: 0%" src="imag/mc.png"></td>
+                        </tr>
+                        <tr style="border-bottom: 0.001em solid #6a767e">
+                            <td class="screen-divison1" onclick="selectRestaurant('Dominos'); selectRestaurantMenu('imag/dominos-menu.png');
+                            selectRestaurantLocation('dominos'); document.location.href='restauracao-restaurante.html';">
+                                <button class="button text">Domino's</button></td>
+                            <td class="screen-divison2"><img class="button logo" src="imag/dominos.png"></td>
+                        </tr>
+                        <tr style="border-bottom: 0.001em solid #6a767d">
+                            <td class="screen-divison1" onclick="selectRestaurant('Burger King'); selectRestaurantMenu('imag/king-menu.png');
+                            selectRestaurantLocation('burgerking'); document.location.href='restauracao-restaurante.html';">
+                                <button class="button text">Burger King</button></td>
+                            <td class="screen-divison2"><img class="button logo" src="imag/Burger_King.png"></td>
+                        </tr>
+                        <tr style="border-bottom: 0.001em solid #6a767d">
+                            <td class="screen-divison1" onclick=" selectRestaurant('KFC'); selectRestaurantMenu('imag/kfc-menu.png');
+                            selectRestaurantLocation('kfc'); document.location.href='restauracao-restaurante.html';">
+                                <button class="button text">KFC</button></td>
+                            <td class="screen-divison2"><img class="button logo" src="imag/KFC.png"></td>
+                        </tr>
+                        <tr>
+                            <td class="screen-divison1" onclick=" selectRestaurant('Pizza Hut'); selectRestaurantMenu('imag/hut-menu.png');
+                            selectRestaurantLocation('pizzahut'); document.location.href='restauracao-restaurante.html';">
+                                <button class="button text">Pizza Hut</button></td>
+                            <td class="screen-divison2"><img class="button logo" src="imag/Pizza_Hut.png"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

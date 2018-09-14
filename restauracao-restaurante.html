@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Restauração - Restaurante</title>
+    <link rel="stylesheet" href="style-restauracao-restaurante.css">
+    <script src="lineup.js"></script>
+    <script src="iRave.js"></script>
+    <script src="time.js"></script>
+
+    <script>
+
+        function rate(points){
+          var allstars = document.getElementsByClassName('star-pic');
+          for(i = 0;i < allstars.length; i++){
+            if(i <= points){
+              allstars[i].src = 'imag/star.png';
+            }
+            else {
+              allstars[i].src = 'imag/star_black.png';
+            }
+          }
+        }
+
+        function changeImage1() {
+          var topScreen = document.getElementById('screen-top');
+          var table = document.getElementById('app-grid');
+          var location = document.getElementById('location');
+          var menu = document.getElementById('full');
+          topScreen.style.display = 'none';
+          table.style.display = 'none';
+          location.style.display = 'none';
+          menu.style.display = 'block';
+          console.log('imprimiu a imagem');
+        }
+      
+        function changeImage2() {
+          var topScreen = document.getElementById('screen-top');
+          var table = document.getElementById('app-grid');
+          var location = document.getElementById('location');
+          var menu = document.getElementById('full');
+          topScreen.style.display = 'block';
+          table.style.display = 'block';
+          location.style.display = 'block';
+          menu.style.display = 'none';
+        }
+
+        function showWaitingTime() {
+          var time = document.getElementById('waitingTime');
+          time.innerHTML = '30min';
+        }
+      
+    </script>
+  </head>
+
+  <body onload="Time(); displayRestaurant(); displayRestaurantMenu();">
+    
+    
+    <div id="screen-app-Procura">
+
+      <div id="screen-top">
+        <div id="back"><img id="back-icon" src="imag/back.png" width="100" onClick="document.location.href='restauracao-refeicao.html';"></div>
+        <div id="app-name"></div>
+        <div id="time">10:09</div>
+      </div>
+
+      <svg id="button-div" width="10" height="18">
+          <rect id="button" width="10" height="18" style="fill:darkgray;" onClick="document.location.href='iRave.html';"/>
+      </svg>
+
+      <div id="menubackgroud" height="6.6em" width="6.6em">
+          <img id='full' id='full' onclick='changeImage2()' width='100' height='100'>
+      </div>
+
+      <div id="main-screen">
+        <table id="app-grid" width="100%">
+          <tr>
+            <td id="screen-divison" width='25%' align="center">
+              <img src="imag/hourglass.png" onclick="showWaitingTime()" width="25">
+              <div id="waitingTime">Demora</div>
+            </td>
+            <td id="screen-divison" width='25%' align="center">
+              <img id='rgb' src="imag/menu.png" onclick="changeImage1()" width="25">
+              <div>Menu</div>
+            </td>
+          </tr>
+        </table>
+        <!--<ul id="name-and-pic">
+          <li class='element' id="clock"><img id="pic" src="imag/clock.png"></li> 
+          <li class='element' id="menu"><img id="pic" src="imag/menu.png"></li>
+        </ul>
+         <ul id="stars">
+          <li class="star"><img id="pic" class="star-pic" src="imag/star_black.png" onclick="rate(0)"></li>
+          <li class="star"><img id="pic" class="star-pic" src="imag/star_black.png" onclick="rate(1)"></li>
+          <li class="star"><img id="pic" class="star-pic" src="imag/star_black.png" onclick="rate(2)"></li>
+          <li class="star"><img id="pic" class="star-pic" src="imag/star_black.png" onclick="rate(3)"></li>
+          <li class="star"><img id="pic" class="star-pic" src="imag/star_black.png" onclick="rate(4)"></li>
+        </ul> -->
+        <ul id="location">
+          <li class="location-element" id="icon-li"><img id="icon-location" src="imag/placeholder.png" onClick="document.location.href='restauracao-restaurante-localizacao.html';"></li>
+          <li class="location-element" id="button-li" onClick="document.location.href='restauracao-restaurante-localizacao.html';"><button id="button-location">Onde fica?</button></li>
+        </ul>
+    </div>
+  </body>
+</html> 

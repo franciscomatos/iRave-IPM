@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>iRave(app)</title>
+        <link rel="stylesheet" href="style-restauracao-restaurante-localizacao.css">
+        <script src="lineup.js"></script>
+        <script src="iRave.js"></script>
+        <script src="time.js"></script>
+    </head>
+
+    <body onload="Time(); displayRestaurantLocation();">
+        <div id='screen-app-lineup'> 
+            <div id='screen-top'>
+                <div id='back'><img id='back-icon' src='imag/back.png' width='100' onClick="document.location.href='restauracao-restaurante.html';"></div>
+                <div id='app-name'>Onde fica?</div>
+                <div id='time'></div>
+            </div>
+            <svg id='button-div' width='10' height='18'>
+                <rect id='button' width='10' height='18' style='fill:darkgray;' onClick="document.location.href='iRave.html';"/>
+            </svg>
+            <div id='fullmap'>
+                <img id='full' src='imag/mapa-refeicao.png'>
+            </div>
+
+            <div id='current-location'><img class='pins' id='current-location-pin' src='imag/placeholder.png'></div>
+
+            <div class='close-locations'><img class='pins' id='mcdonalds' src='imag/pin.png'></div>
+            <div class='close-locations-name' id='mcdonalds-name'>McDonalds</div>
+
+            <div class='close-locations'><img class='pins' id='kfc' src='imag/pin.png'></div>
+            <div class='close-locations-name' id='kfc-name'>KFC</div>
+
+            <div class='close-locations'><img class='pins' id='dominos' src='imag/pin.png'></div>
+            <div class='close-locations-name' id='dominos-name'>Dominos</div>
+
+            <div class='close-locations'><img class='pins' id='burgerking' src='imag/pin.png'></div>
+            <div class='close-locations-name' id='burgerking-name'>Burguer King</div>
+
+            <div class='close-locations'><img class='pins' id='pizzahut' src='imag/pin.png'></div>
+            <div class='close-locations-name' id='pizzahut-name'>Pizza Hut</div>
+
+            
+        </div>
+
+    </body>

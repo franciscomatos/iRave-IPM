@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>iRave(app)</title>
+        <link rel="stylesheet" href="style-cartaz-palcos.css">
+        <script src="lineup.js"></script>
+        <script src="iRave.js"></script>
+        <script src="time.js"></script>
+    </head>
+
+    <body onload="Time(); displayStageLocation();">
+        <div id='screen-app-lineup'> 
+            <div id='screen-top'>
+                <div id='back'><img id='back-icon' src='imag/back.png' width='100' onClick="document.location.href='live.html';"></div>
+                <div id='app-name'></div>
+                <div id='time'></div>
+            </div>
+            <svg id='button-div' width='10' height='18'>
+                <rect id='button' width='10' height='18' style='fill:darkgray;' onClick="document.location.href='iRave.html';"/>
+            </svg>
+            <div id='fullmap'>
+                <img id='full' src='imag/mapa-palcos.png'>
+            </div>
+
+            <div id='north'><img class='pins' id='north-image' src='imag/direction.png'></div>
+
+            <div id='current-location'><img class='pins' id='current-location-pin' src='imag/placeholder.png'></div>
+
+            <div class='close-locations'><img class='pins' id='principal' src='imag/pin.png'></div>
+            <div class='close-locations-name' id='principal-name'>Palco Principal</div>
+
+            <div class='close-locations'><img class='pins' id='secundario' src='imag/pin.png'></div>
+            <div class='close-locations-name' id='secundario-name'>Palco Secundário</div>
+            
+        </div>
+
+    </body>

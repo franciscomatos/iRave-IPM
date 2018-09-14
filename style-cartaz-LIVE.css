@@ -1,0 +1,255 @@
+body {
+  font-family: "Source Sans Pro", Helvetica, Arial;
+  font-weight:lighter;
+  color: white;
+}
+
+#screen-app-lineup-LIVE {
+  width: 6.60em;
+  height: 6.60em;
+  display: block;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid darkgray;
+  border-radius: 0.5em;
+  position: absolute;
+  background-color: #45555F;
+
+}
+
+#button-div {
+  display: block;
+  position: absolute;
+  left: 103%;
+  margin-top: 1em;
+  z-index: 10;
+}
+
+#button {
+  fill:black;
+  rx:4;
+  ry:4;
+  stroke: #636363;
+  display: block;
+}
+
+#screen-top {
+  height: 0.825em;
+  width: inherit;
+}
+
+#screen-bottom {
+  height: 0.825em;
+  width: inherit;
+  position: fixed;
+  bottom: 0;
+}
+
+#time {
+  height: inherit;
+  width: 25%;
+  position: fixed;
+  right: 0;
+  font-size: 0.5em;
+  color: white;
+  text-align: center;
+}
+
+#app-name {
+  height: inherit;
+  width: 60%;
+  position: fixed;
+  left: 15%;
+  font-size: 0.5em;
+  color: white;
+  text-align: left;
+}
+
+#back {
+  height: inherit;
+  width: 15%;
+  position: fixed;
+  left: 0;
+}
+
+#back-icon {
+  filter: invert(100%);
+  height: 0.7em;
+  width: 0.9em;
+  position: fixed;
+}
+
+
+
+#dot-division {
+  height: inherit;
+  width: inherit;
+  table-layout: fixed;
+}
+
+#app-division {
+  height: 4.95em;
+  width: inherit;
+  table-layout: fixed;
+}
+
+#screen-divison {
+  font-size: 0.1em;
+}
+
+#sidebyside {
+  float: left;
+  width: 50%;
+  display: block;
+}
+
+#left-dot {
+  position: relative;
+  bottom: 0.5em;
+  left: 1.1em;
+}
+
+#right-dot {
+  position: relative;
+  bottom: 0.5em;
+  right: 1.1em;
+}
+
+#band-name {
+  text-align: center;
+  margin-top: 0.3em;
+
+}
+#band-name2 {
+  text-align: center;
+  margin-top: 0.3em;
+
+}
+
+#location {
+  list-style-type: none;
+  width: 100%;
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+#location2 {
+  list-style-type: none;
+  width: 100%;
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+.location-element {
+  float:left;
+  position: relative;
+}
+
+#icon-li {
+  width:10%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#button-li {
+  width:80%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#icon-location {
+  width:100%;
+  z-index: 100;
+  margin-left: 0.8em;
+  position: relative;
+  bottom: 0.2em;
+}
+
+
+#button-location {
+  width:100%;
+  text-align: right;
+  height: inherit;
+  display: flex;
+  justify-content: flex-end;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  border-radius: 0.5em;
+  border-left: 2em;
+  z-index: -10;
+  font-size: 0.5em;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5em;
+}
+
+#progress {
+  position: relative;
+  background: #45555F;
+  border-radius: 13px;
+  border: 1px solid #009EE2;
+  height: 0.2em;
+  width: 90%;
+  padding: 1px;
+  margin-top: 0.5em;
+  align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#progress:after {
+    content: '';
+    display: block;
+    background: #009EE2;
+    width: 60%;
+    height: 100%;
+    border-radius: 9px;
+}
+
+#text-progress {
+  text-align: center;
+  font-size: 0.5em;
+}
+
+#main-screen2 {
+  display: none;
+}
+
+#progress2 {
+  position: relative;
+  background: #45555F;
+  border-radius: 13px;
+  border: 1px solid #009EE2;
+  height: 0.2em;
+  width: 90%;
+  padding: 1px;
+  margin-top: 0.5em;
+  align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#progress2:after {
+    content: '';
+    display: block;
+    background: #009EE2;
+    width: 50%;
+    height: 100%;
+    border-radius: 9px;
+}

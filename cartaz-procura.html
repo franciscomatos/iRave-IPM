@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>iRave(app)</title>
+    <link rel="stylesheet" href="style-cartazprocura.css">
+    <script src="lineup.js"></script>
+    <script src="iRave.js"></script>
+    <script src="time.js"></script>
+  </head>
+
+  <body onload="Time()">
+    <script>
+
+      function changeDay1(item) {
+        var other = document.getElementById('day2');
+        var otherLineUp = document.getElementById('parent2');
+        var newLineUp = document.getElementById('parent');
+        item.style.color = "#009DE0";
+        other.style.color = "white";
+        otherLineUp.style.display = "none";
+        newLineUp.style.display = "block";
+      }
+
+      function changeDay2(item) {
+        var other = document.getElementById('day1');
+        var otherLineUp = document.getElementById('parent');
+        var newLineUp = document.getElementById('parent2');
+        item.style.color = "#009DE0";
+        other.style.color = "white";
+        otherLineUp.style.display = "none";
+        newLineUp.style.display = "block";
+      }
+
+    </script>
+    
+    <div id="screen-app-lineup">
+
+      <div id="screen-top">
+        <div id="back"><img id="back-icon" src="imag/back.png" width="100" onClick="document.location.href='cartaz.html';"></div>
+        <div id="app-name">Procura</div>
+        <div id="time">10:09</div>
+      </div>
+
+      <svg id="button-div" width="10" height="18">
+          <rect id="button" width="10" height="18" style="fill:darkgray;" onClick="document.location.href='iRave.html';"/>
+      </svg>
+
+      <ul id="day-selection">
+        <li class="day"><button class="day-button" id="day1" onclick="changeDay1(this)">Dia 19</button></li>
+        <li class="day"><button class="day-button" id="day2" onclick="changeDay2(this)">Dia 20</button></li>
+      </ul>
+
+      <div class="parent" id="parent">
+        <div class="child">
+          <table class="btn-group">
+            <tr style="border-bottom: 0.001em solid #6a767e">
+              <td class="screen-divison1"><button class="button" onclick="selectBand('The XX'); selectSchedule('19 de Julho, 18h'); selectStage('Palco Principal'); selectPic('imag/thexx.jpg');
+                selectStageLocation('principal'); document.location.href='cartaz-procura-banda.html';">The XX</button></td>
+              <td class="screen-divison2"><button class="button">18h</button></td>
+            </tr>
+            <tr style="border-bottom: 0.001em solid #6a767e">
+              <td class="screen-divison1"><button class="button" onclick="selectBand('Slow J'); selectSchedule('19 de Julho, 19h'); selectStage('Palco Secund&aacute;rio'); selectPic('imag/slowj.jpg');
+                selectStageLocation('secundario'); document.location.href='cartaz-procura-banda.html';">Slow J</button></td>
+              <td class="screen-divison2"><button class="button">19h</button></td>
+            </tr>
+            <tr style="border-bottom: 0.001em solid #6a767e">
+              <td class="screen-divison1"><button class="button" onclick="selectBand('Travis Scott'); selectSchedule('19 de Julho, 20h'); selectStage('Palco Principal'); selectPic('imag/travisscott.jpg');
+                selectStageLocation('principal'); document.location.href='cartaz-procura-banda.html';">Travis Scott</button></td>
+              <td class="screen-divison2"><button class="button">20h</button></td>
+            </tr>
+            <tr style="border-bottom: 0.001em solid #6a767e">
+              <td class="screen-divison1"><button class="button" onclick="selectBand('Benjamin Clementine'); selectSchedule('19 de Julho, 21h'); selectStage('Palco Secund&aacute;rio'); selectPic('imag/benjaminclementine.jpg');
+                selectStageLocation('secundario'); document.location.href='cartaz-procura-banda.html';">Benjamin Clementine</button></td>
+              <td class="screen-divison2"><button class="button">21h</button></td>
+            </tr>
+            <tr style="border-bottom: 0.001em solid #6a767e">
+              <td class="screen-divison1"><button class="button" onclick="selectBand('The Vaccines'); selectSchedule('19 de Julho, 22h'); selectStage('Palco Principal'); selectPic('imag/thevaccines.jpg');
+                selectStageLocation('principal'); document.location.href='cartaz-procura-banda.html';">The Vaccines</button></td>
+              <td class="screen-divison2"><button class="button">22h</button></td>
+            </tr>
+          </table>
+
+        </div>
+      </div> 
+
+      <div class="parent2" id="parent2">
+        <div class="child2">
+          <table class="btn-group2">
+            <tr style="border-bottom: 0.001em solid #6a767e">
+              <td class="screen-divison1"><button class="button" onclick="selectBand('Justice'); selectSchedule('20 de Julho, 18h'); selectStage('Palco Principal'); selectPic('imag/justice.jpg');
+                selectStageLocation('principal'); document.location.href='cartaz-procura-banda.html';">Justice</button></td>
+              <td class="screen-divison2"><button class="button">18h</button></td>
+            </tr>
+            <tr style="border-bottom: 0.001em solid #6a767e">
+              <td class="screen-divison1"><button class="button" onclick="selectBand('Olivier St.Louis'); selectSchedule('20 de Julho, 19h'); selectStage('Palco Secund&aacute;rio'); selectPic('imag/olivierstlouis.jpg');
+                selectStageLocation('secundario'); document.location.href='cartaz-procura-banda.html';">Olivier St.Louis</button></td>
+              <td class="screen-divison2"><button class="button">19h</button></td>
+            </tr>
+            <tr style="border-bottom: 0.001em solid #6a767e">
+              <td class="screen-divison1"><button class="button" onclick="selectBand('Sevdaliza'); selectSchedule('20 de Julho, 20h'); selectStage('Palco Principal'); selectPic('imag/sevdaliza.jpg');
+                selectStageLocation('principal'); document.location.href='cartaz-procura-banda.html';">Sevdaliza</button></td>
+              <td class="screen-divison2"><button class="button">20h</button></td>
+            </tr>
+            <tr style="border-bottom: 0.001em solid #6a767e">
+              <td class="screen-divison1"><button class="button" onclick="selectBand('Mahalia'); selectSchedule('20 de Julho, 21h'); selectStage('Palco Secund&aacute;rio'); selectPic('imag/mahalia.jpg');
+                selectStageLocation('secundario'); document.location.href='cartaz-procura-banda.html';">Mahalia</button></td>
+              <td class="screen-divison2"><button class="button">21h</button></td>
+            </tr>
+            <tr style="border-bottom: 0.001em solid #6a767e">
+              <td class="screen-divison1"><button class="button" onclick="selectBand('Tom Misch'); selectSchedule('20 de Julho, 22h'); selectStage('Palco Principal'); selectPic('imag/tommisch.jpg');
+                selectStageLocation('principal'); document.location.href='cartaz-procura-banda.html';">Tom Misch</button></td>
+              <td class="screen-divison2"><button class="button">22h</button></td>
+            </tr>
+            <tr style="border-bottom: 0.001em solid #6a767e">
+              <td class="screen-divison1"><button class="button" onclick="selectBand('Jorja Smith'); selectSchedule('20 de Julho, 23h'); selectStage('Palco Principal'); selectPic('imag/jorjasmith.jpg');
+                selectStageLocation('principal'); document.location.href='cartaz-procura-banda.html';">Jorja Smith</button></td>
+              <td class="screen-divison2"><button class="button">23h</button></td>
+            </tr>
+          </table>
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </body>
+
+</html>

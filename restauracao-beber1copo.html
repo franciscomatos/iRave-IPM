@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>iRave(app)</title>
+        <link rel="stylesheet" href="style-restauracao-beber1copo.css">
+        <script src="lineup.js"></script>
+        <script src="restaurants.js"></script>
+        <script src="iRave.js"></script>
+        <script src="time.js"></script>
+    </head>
+
+    <body onload="Time()">
+    
+        <div id="screen-app-lineup">
+
+            <div id="screen-top">
+                <div id="back"><img id="back-icon" src="imag/back.png" width="100" onClick="document.location.href='restauracao.html';"></div>
+                <div id="app-name">Beber 1 copo</div>
+                <div id="time">10:09</div>
+            </div>
+
+            <svg id="button-div" width="10" height="18">
+                    <rect id="button" width="10" height="18" style="fill:darkgray;" onClick="document.location.href='iRave.html';"/>
+            </svg>
+
+            <div class="parent" id="parent">
+                <div class="child">
+                    <table class="btn-group">
+                        <tr style="border-bottom: 0.001em solid #6a767d">
+                            <td class="screen-divison1" onclick=" selectRestaurant('Starbucks'); selectRestaurantMenu('imag/starbucks-menu.png');
+                            selectRestaurantLocation('starbucks'); document.location.href='restauracao-bar.html';">
+                                <button class="button text">Starbucks</button></td>
+                            <td class="screen-divison2"><img class="button logo" style="border-radius: 0%" src="imag/starbucks.png"></td>
+                        </tr>
+                        <tr style="border-bottom: 0.001em solid #6a767e">
+                            <td class="screen-divison1" onclick="selectRestaurant('Super Bock'); selectRestaurantMenu('imag/superbock-menu.jpg');
+                            selectRestaurantLocation('superbock'); document.location.href='restauracao-bar.html';">
+                                <button class="button text">Super Bock</button></td>
+                            <td class="screen-divison2"><img class="button logo" src="imag/super-bock.png"></td>
+                        </tr>
+                        <tr style="border-bottom: 0.001em solid #6a767d">
+                            <td class="screen-divison1" onclick="selectRestaurant('Heineken'); selectRestaurantMenu('imag/heineken-menu.png');
+                            selectRestaurantLocation('heineken'); document.location.href='restauracao-bar.html';">
+                                <button class="button text">Heineken</button></td>
+                            <td class="screen-divison2"><img class="button logo" src="imag/heineken.png"></td>
+                        </tr>
+                        <tr style="border-bottom: 0.001em solid #6a767d">
+                            <td class="screen-divison1" onclick=" selectRestaurant('Somersby'); selectRestaurantMenu('imag/somersby-menu.png');
+                            selectRestaurantLocation('somersby'); document.location.href='restauracao-bar.html';">
+                                <button class="button text">Somersby</button></td>
+                            <td class="screen-divison2"><img class="button logo" src="imag/somersby.png"></td>
+                        </tr>
+                        <tr>
+                            <td class="screen-divison1" onclick=" selectRestaurant('Absolut'); selectRestaurantMenu('imag/absolut-menu.png');
+                            selectRestaurantLocation('absolut'); document.location.href='restauracao-bar.html';">
+                                <button class="button text">Absolut</button></td>
+                            <td class="screen-divison2"><img class="button logo" src="imag/absolut.png" style="position: relative; margin-bottom: 0.11em;"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cartaz-LIVE</title>
+    <link rel="stylesheet" href="style-cartaz-LIVE.css">
+    <script src="time.js"></script>
+    <script src="iRave.js"></script>
+  </head>
+
+  <body onload="Time()"> 
+    <script>
+    function changeLive1() {
+      var newDot = document.getElementById('left-dot');
+      var oldDot = document.getElementById('right-dot');
+      var newLineUp = document.getElementById('main-screen');
+      var oldLineUp = document.getElementById('main-screen2');
+      newDot.src = "imag/fullcircle.png";
+      oldDot.src = "imag/emptycircle.png";
+      newLineUp.style.display = "block";
+      oldLineUp.style.display = "none";
+    }
+
+    function changeLive2() {
+      var newDot = document.getElementById('right-dot');
+      var oldDot = document.getElementById('left-dot');
+      var newLineUp = document.getElementById('main-screen2');
+      var oldLineUp = document.getElementById('main-screen');
+      newDot.src = "imag/fullcircle.png";
+      oldDot.src = "imag/emptycircle.png";
+      newLineUp.style.display = "block";
+      oldLineUp.style.display = "none";
+    }
+    </script>
+
+    <div id="screen-app-lineup-LIVE">
+
+      <div id="screen-top">
+        <div id="back"><img id="back-icon" src="imag/back.png" width="100" onClick="document.location.href='cartaz.html';"></div>
+        <div id="app-name">Live</div>
+        <div id="time">10:09</div>
+      </div>
+
+      <svg id="button-div" width="10" height="18">
+          <rect id="button" width="10" height="18" style="fill:darkgray;" onClick="document.location.href='iRave.html';"/>
+      </svg>
+
+      <div id="main-screen">
+        <div id="band-name">The XX</div>
+        <ul id="location">
+          <li class="location-element" id="icon-li"><img id="icon-location" src="imag/placeholder.png" onclick="selectStage('Palco Principal'); selectStageLocation('principal');
+            document.location.href='cartaz-live-palcos.html';">
+          <li class="location-element" id="button-li" onclick="selectStage('Palco Principal'); selectStageLocation('principal');
+          document.location.href='cartaz-live-palcos.html';"><button id="button-location">Palco Principal</button></li>
+        </ul>
+        <br>
+        <div id="progress"></div>
+        <div id="text-progress">Começou há 40 minutos</div>
+      </div>
+
+      <div id="main-screen2">
+        <div id="band-name2">Slow J</div>
+        <ul id="location2">
+          <li class="location-element" id="icon-li"><img id="icon-location" src="imag/placeholder.png" onclick="selectStage('Palco Secundário'); selectStageLocation('secundario');
+            document.location.href='cartaz-live-palcos.html';"></li>
+          <li class="location-element" id="button-li" onclick="selectStage('Palco Secundário'); selectStageLocation('secundario');
+          document.location.href='cartaz-live-palcos.html';"><button id="button-location">Palco Secund&aacute;rio</button></li>
+        </ul>
+        <br>
+        <div id="progress2"></div>
+        <div id="text-progress">Começou há 30 minutos</div>
+      </div>
+
+      <div id="screen-bottom">
+        <table id="dot-divison" height="100%" width="100%">
+          <tr>
+            <td width='50' align="center">
+              <div id="sidebyside" margin="0"><img id="left-dot" onclick="changeLive1()" src="imag/fullcircle.png" width="9" margin="0"></div>
+              <div id="sidebyside" margin="0"><img id="right-dot" onclick="changeLive2()"src="imag/emptycircle.png" width="9" margin="0"></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>iRave(app)</title>
+        <link rel="stylesheet" href="style-mapa-wc.css">
+        <script src="lineup.js"></script>
+        <script src="iRave.js"></script>
+        <script src="time.js"></script>
+    </head>
+
+    <body onload="Time();">
+        <div id='screen-app-lineup'> 
+
+            <div id='screen-top'>
+                <div id='back'><img id='back-icon' src='imag/back.png' width='100' onClick="document.location.href='mapa.html';"></div>
+                <div id='app-name'>WC</div>
+                <div id='time'></div>
+            </div>
+            
+            <svg id='button-div' width='10' height='18'>
+                <rect id='button' width='10' height='18' style='fill:darkgray;' onClick="document.location.href='mapa-wc.html';"/>
+            </svg>
+            <div id='fullmap'>
+                <img id='full' src='imag/mapa-bares.png'>
+            </div>
+
+            <div id='current-location'><img class='pins' id='current-location-pin' src='imag/placeholder.png'></div>
+
+            <div class='close-locations'><img class='pins' id='man1' src='imag/bluepin.png'></div>
+
+            <div class='close-locations'><img class='pins' id='man2' src='imag/bluepin.png'></div>
+
+            <div class='close-locations'><img class='pins' id='man3' src='imag/bluepin.png'></div>
+
+            <div class='close-locations'><img class='pins' id='woman1' src='imag/pinkpin.png'></div>
+
+            <div class='close-locations'><img class='pins' id='woman2' src='imag/pinkpin.png'></div>
+
+            <div class='close-locations'><img class='pins' id='woman3' src='imag/pinkpin.png'></div>
+
+            
+        </div>
+
+    </body>
