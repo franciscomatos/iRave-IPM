@@ -1,6 +1,6 @@
 # iRave
 
-This project consists on the design of an interface for a smartwatch called 'iRave'. It's purpose is to being used at summer festivals and to help you with simple tasks. 
+This project consists of the design of an interface for a smartwatch called 'iRave'. Its purpose is to being used at summer festivals and to help you with simple tasks. 
 
 ## Running
 
